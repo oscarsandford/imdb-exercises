@@ -1,4 +1,4 @@
-A setup for conducting data science interviews using the [IMDB dataset](https://www.kaggle.com/datasets/ashirwadsangwan/imdb-dataset).
+A setup and some exercises for conducting data science interviews using the [IMDB dataset](https://www.kaggle.com/datasets/ashirwadsangwan/imdb-dataset).
 
 Components:
 - Data cleaning script
@@ -32,7 +32,7 @@ $ python clean.py
 
 Replace `/path/to/this/repo/` with the absolute path to this cloned repository on your machine. You can change the password to whatever you want.
 ```sh
-$ docker run --name imdb1 -e MYSQL_ROOT_PASSWORD="pass" -v /path/to/this/repo/:/src/:ro -d mysql:8.0
+$ docker run --name imdb1 -e MYSQL_ROOT_PASSWORD="pass" -v /path/to/this/repo/:/src/:ro -p "8791:3306" -d mysql:8.0
 ```
 
 Enter the MySQL container.
